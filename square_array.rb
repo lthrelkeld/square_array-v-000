@@ -1,3 +1,8 @@
 def square_array(array)
-  Squared_array = array.each{|squared| squared*squared}
+  index = 0
+  array.each do |value|
+    square_value = value*value
+    array[index] = square_value
+    index +=1
+  end
 end
